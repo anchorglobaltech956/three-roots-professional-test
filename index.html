@@ -1856,24 +1856,24 @@ setLanguage(language);
   if(specialtyLink)specialtyLink.before(categoryLink);else jumpNav.append(categoryLink);
   const grid=section.querySelector('.visible-products');
   const card=document.createElement('article');card.className='visible-product cottonseed-card';
-  card.innerHTML=`<h4>Whole Fuzzy Cottonseed</h4>
-    <details><summary><div class="cottonseed-photo-frame"><img src="whole-fuzzy-cottonseed-bright.webp?v=20260922-clean2" alt="Bright close-up illustration of intact, lint-covered whole fuzzy cottonseeds" loading="lazy"></div><span class="cottonseed-expand"></span></summary>
+  card.innerHTML=`<h4>Whole Cottonseed</h4>
+    <details><summary><div class="cottonseed-photo-frame"><img src="whole-fuzzy-cottonseed-bright.webp?v=20260922-clean2" alt="Bright close-up illustration of intact, lint-covered whole cottonseeds" loading="lazy"></div><span class="cottonseed-expand"></span></summary>
     <div class="cottonseed-reference"></div>
     <div class="cottonseed-values"><span><strong>90–96%</strong><span class="cottonseed-tdn"></span></span><span><strong>21–24%</strong><span class="cottonseed-protein"></span></span><span><strong>18–20%</strong><span class="cottonseed-fat"></span></span><span><strong>21–28%</strong><span class="cottonseed-fiber"></span></span></div>
     <p class="cottonseed-minerals"></p><p class="cottonseed-safety"></p>
     <p class="cottonseed-source"><a href="https://www.aces.edu/blog/topics/beef/whole-cottonseed-use-in-beef-cattle-diets/" target="_blank" rel="noopener noreferrer"></a></p></details>
-    <a class="feed-inquiry" href="#find-dealer" data-feed-name="Whole Fuzzy Cottonseed"></a>`;
+    <a class="feed-inquiry" href="#find-dealer" data-feed-name="Whole Cottonseed"></a>`;
   grid.append(card);
   const feedSelect=document.querySelector('#dealer-feed');
-  if(feedSelect && ![...feedSelect.options].some(option=>option.value==='Whole Fuzzy Cottonseed')){
-    const option=document.createElement('option');option.value='Whole Fuzzy Cottonseed';option.textContent='Whole Fuzzy Cottonseed — ask availability';feedSelect.add(option);
+  if(feedSelect && ![...feedSelect.options].some(option=>option.value==='Whole Cottonseed')){
+    const option=document.createElement('option');option.value='Whole Cottonseed';option.textContent='Whole Cottonseed — ask availability';feedSelect.add(option);
   }
   const translations={
     en:{category:'Cattle & Dairy Feeds (1)',intro:'Cattle and dairy ingredients have their own category, separate from our rooster and poultry feeds. Additional Three Roots products can be added when their photos and verified labels are supplied.',expand:'Tap photo to view more detail / collapse',reference:'Typical dry-matter reference ranges for whole cottonseed in adult cattle diets—not a guaranteed Three Roots product analysis. Confirm actual lot values by feed testing.',tdn:'Total Digestible Nutrients (TDN) · energy chiefly from oil',protein:'Crude protein · supports tissue and lactation in cattle',fat:'Crude fat (oil) · energy and body condition',fiber:'Crude fiber (lint and hull) · supports rumen function',minerals:'Minerals: phosphorus-rich and relatively low in calcium; cattle rations need mineral balancing.',safety:'For properly formulated adult-cattle rations only. Whole cottonseed contains gossypol; it is not a rooster or poultry feed. Consult a qualified animal nutritionist about suitability, inclusion rates, and testing.',source:'Nutrition and feeding safety reference: Alabama Cooperative Extension →',ask:'Ask about availability'},
     es:{category:'Alimentos para Ganado y Lechería (1)',intro:'Los ingredientes para ganado y lechería tienen una categoría propia, separada de los alimentos para gallos y aves. Podremos agregar más productos Three Roots cuando se proporcionen sus fotos y etiquetas verificadas.',expand:'Toca la foto para verla con más detalle / cerrarla',reference:'Rangos de referencia típicos sobre materia seca para semilla de algodón entera en dietas de bovinos adultos; no son un análisis garantizado de Three Roots. Confirma cada lote con pruebas de laboratorio.',tdn:'Nutrientes digestibles totales (TDN) · energía principalmente del aceite',protein:'Proteína cruda · favorece tejidos y lactancia en bovinos',fat:'Grasa cruda (aceite) · energía y condición corporal',fiber:'Fibra cruda (borra y cáscara) · apoya la función ruminal',minerals:'Minerales: rica en fósforo y relativamente baja en calcio; la ración requiere equilibrio mineral.',safety:'Solo para raciones bien formuladas de bovinos adultos. La semilla de algodón entera contiene gosipol; no es alimento para gallos o aves. Consulta a un nutricionista animal sobre su uso, dosis y análisis.',source:'Referencia sobre nutrición y seguridad: Alabama Cooperative Extension →',ask:'Consultar disponibilidad'}
   };
   function render(){const t=translations[document.documentElement.lang==='es'?'es':'en'];section.querySelector('h3').textContent=t.category.replace(' (1)','');section.querySelector('.cattle-category-intro').textContent=t.intro;categoryLink.textContent=t.category;for(const key of ['expand','reference','tdn','protein','fat','fiber','minerals','safety'])card.querySelector('.cottonseed-'+key).textContent=t[key];card.querySelector('.cottonseed-source a').textContent=t.source;card.querySelector('.feed-inquiry').textContent=t.ask;}
-  card.querySelector('.feed-inquiry').addEventListener('click',()=>{if(feedSelect)feedSelect.value='Whole Fuzzy Cottonseed';});
+  card.querySelector('.feed-inquiry').addEventListener('click',()=>{if(feedSelect)feedSelect.value='Whole Cottonseed';});
   render();document.querySelector('.language-toggle')?.addEventListener('click',render);
 })();
 </script>
@@ -1907,7 +1907,7 @@ setLanguage(language);
     {requested:'Red Rooster Conditioner',label:'Red Rooster Conditioner',image:'media-7.webp?v=20260922-clean2',kind:'feeds'},
     {requested:'Premium Hi-Pro Conditioner',label:'Premium Hi Pro Mix',image:'media-12.webp?v=20260922-clean2',kind:'feeds'},
     {requested:'Yellow Corn',label:'Yellow Corn',image:'media-25.webp?v=20260922-clean2',kind:'grains'},
-    {requested:'Cottonseed',label:'Whole Fuzzy Cottonseed',image:'whole-fuzzy-cottonseed-bright.webp?v=20260922-clean2',kind:'grains',cattle:true}
+    {requested:'Cottonseed',label:'Whole Cottonseed',image:'whole-fuzzy-cottonseed-bright.webp?v=20260922-clean2',kind:'grains',cattle:true}
   ];
   const select=document.querySelector('#dealer-feed');
   for(const item of featured){
@@ -1915,7 +1915,7 @@ setLanguage(language);
     const heading=document.createElement('h4');heading.textContent=item.label;
     const details=document.createElement('details');
     const summary=document.createElement('summary');summary.innerHTML='<div class="top-seller-photo-frame"><img loading="lazy" alt=""><span class="top-seller-tap"></span></div>';
-    const img=summary.querySelector('img');img.src=item.image;img.alt=item.label+(item.cattle?' — illustrative image of whole fuzzy cottonseed':' — supplied product photograph');
+    const img=summary.querySelector('img');img.src=item.image;img.alt=item.label+(item.cattle?' — illustrative image of whole cottonseed':' — supplied product photograph');
     details.append(summary);
     const note=document.createElement('p');note.className=item.cattle?'top-seller-cattle-note':'top-seller-label-note';
     if(item.cattle)details.append(note);
