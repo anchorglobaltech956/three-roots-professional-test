@@ -116,6 +116,47 @@ if ($type === 'dealer_request') {
         'IP: ' . $ip,
         'Browser: ' . $userAgent,
     ];
+
+} elseif ($type === 'order_request') {
+    $name = one_line('name', 100);
+    $phone = one_line('phone', 40);
+    $email = valid_email_from(one_line('email', 254));
+    $city = one_line('city', 100);
+    $state = one_line('state', 40);
+    $customerType = one_line('customer_type', 100);
+    $product = one_line('product', 180);
+    $quantity = one_line('quantity', 20);
+    $unit = one_line('unit', 40);
+    $fulfillment = one_line('fulfillment', 120);
+    $message = clean_text('message', 2500);
+
+    if ($name === '' || $phone === '' || $city === '' || $state === '' || $quantity === '') {
+        respond(false, $language === 'es' ? 'Complete nombre, teléfono, ciudad, estado y cantidad.' : 'Please complete name, phone, city, state, and quantity.', 422);
+    }
+
+    $replyTo = $email;
+    $subject = 'Three Roots FEED ORDER REQUEST - ' . $name . ' - ' . $city . ', ' . $state;
+    $lines = [
+        'THREE ROOTS ANIMAL NUTRITION - ONLINE FEED ORDER REQUEST',
+        '',
+        'Customer / Cliente: ' . $name,
+        'Phone / Telefono: ' . $phone,
+        'Email / Correo: ' . ($email !== '' ? $email : '-'),
+        'City / Ciudad: ' . $city,
+        'State / Estado: ' . $state,
+        'Customer type / Tipo de cliente: ' . ($customerType !== '' ? $customerType : '-'),
+        'Product / Producto: ' . ($product !== '' ? $product : '-'),
+        'Quantity / Cantidad: ' . $quantity . ' ' . $unit,
+        'Pickup or delivery / Recoleccion o entrega: ' . ($fulfillment !== '' ? $fulfillment : '-'),
+        'Special instructions / Instrucciones:',
+        ($message !== '' ? $message : '-'),
+        '',
+        'Submitted from / Enviado desde: ' . $site,
+        'Date / Fecha: ' . $timestamp,
+        'IP: ' . $ip,
+        'Browser: ' . $userAgent,
+    ];
+
 } elseif ($type === 'customer_quote') {
     $name = one_line('name', 100);
     $contact = one_line('contact', 254);
