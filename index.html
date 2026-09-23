@@ -1201,6 +1201,178 @@ body{background:linear-gradient(180deg,#fbf7ed 0%,#f4f7ed 52%,#fbf7ed 100%)!impo
 }
 </style>
 
+
+<style id="plant-about-v8-style">
+.plant-about-v8{
+  background:#f7f1df !important;
+  color:#173b2c !important;
+  padding:56px 0;
+}
+.plant-about-v8 .plant-about-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:30px;
+  align-items:stretch;
+}
+.plant-about-v8 figure,
+.plant-about-v8 .about-story{
+  margin:0;
+  background:#fffdf7;
+  border:1px solid #cad7c5;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 12px 30px rgba(22,59,44,.08);
+}
+.plant-about-v8 figure img{
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:420px;
+  object-fit:cover;
+}
+.plant-about-v8 figcaption{
+  padding:15px 18px;
+  background:#edf5e9;
+  color:#275f43;
+  font-weight:800;
+}
+.plant-about-v8 .about-story{
+  padding:34px;
+}
+.plant-about-v8 h2{
+  margin:8px 0 16px;
+  color:#173b2c;
+  font:700 clamp(2rem,3.5vw,3rem) Georgia,serif;
+  line-height:1.08;
+}
+.plant-about-v8 p{
+  color:#59675d;
+  line-height:1.72;
+}
+.plant-about-v8 .about-points{
+  display:grid;
+  gap:12px;
+  margin:20px 0 0;
+}
+.plant-about-v8 .about-point{
+  padding:14px 16px;
+  border-radius:12px;
+  background:#edf5e9;
+  border:1px solid #d3dfcf;
+}
+.plant-about-v8 .about-point strong{
+  color:#173b2c;
+  display:block;
+  margin-bottom:4px;
+}
+@media(max-width:900px){
+  .plant-about-v8 .plant-about-grid{grid-template-columns:1fr}
+  .plant-about-v8 figure img{min-height:280px}
+}
+</style>
+
+
+<style id="dealer-email-order-v9">
+.retailer-section,
+.quote-section{
+  background:#f7f1df !important;
+  color:#173b2c !important;
+}
+.retailer-panel,
+.quote-layout{
+  gap:28px !important;
+}
+.retailer-intro,
+.retailer-steps,
+.quote-copy,
+.quote-card,
+.order-email-box{
+  background:#fffdf7 !important;
+  border:1px solid #cad7c5 !important;
+  border-radius:18px !important;
+  box-shadow:0 12px 30px rgba(22,59,44,.08) !important;
+  color:#173b2c !important;
+}
+.retailer-intro{padding:34px !important}
+.retailer-steps{padding:26px !important}
+.quote-copy{padding:34px !important}
+.quote-card{padding:28px !important}
+.retailer-intro h2,
+.retailer-steps h3,
+.quote-copy h2,
+.quote-card h3,
+.order-email-box h3{color:#173b2c !important}
+.retailer-intro p,
+.retailer-intro small,
+.retailer-steps p,
+.quote-copy p,
+.quote-card p,
+.order-email-box p{color:#59675d !important}
+
+.dealer-benefits{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  margin:22px 0;
+}
+.dealer-benefit{
+  background:#edf5e9;
+  border:1px solid #d3dfcf;
+  border-radius:14px;
+  padding:16px;
+}
+.dealer-benefit strong{
+  display:block;
+  color:#173b2c;
+  margin-bottom:5px;
+}
+.dealer-benefit span{
+  color:#59675d;
+  line-height:1.45;
+  font-size:.94rem;
+}
+
+.order-email-box{
+  margin-top:22px;
+  padding:24px !important;
+  background:#edf5e9 !important;
+}
+.order-email-box .email-order-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:12px 18px;
+  border-radius:10px;
+  background:#275f43;
+  color:#fff;
+  text-decoration:none;
+  font-weight:850;
+}
+.order-email-box .order-email-address{
+  display:block;
+  margin-top:12px;
+  color:#275f43;
+  font-weight:850;
+}
+.order-email-template{
+  margin-top:16px;
+  padding:16px;
+  background:#fffdf7;
+  border:1px dashed #9fb39e;
+  border-radius:12px;
+}
+.order-email-template ul{
+  margin:8px 0 0 18px;
+  color:#59675d;
+  line-height:1.55;
+}
+
+@media(max-width:900px){
+  .dealer-benefits{grid-template-columns:1fr}
+}
+</style>
+
 </head>
 <body>
 <style id="rooster-hero-and-plant-section">
@@ -1318,6 +1490,38 @@ body{background:linear-gradient(180deg,#fbf7ed 0%,#f4f7ed 52%,#fbf7ed 100%)!impo
 </div>
 <a aria-label="Scroll to formulas" class="scroll-cue" href="#formulas"><span></span></a>
 </section>
+
+<section class="plant-about-v8" id="about-three-roots" aria-labelledby="about-three-roots-title">
+  <div class="shell plant-about-grid">
+    <figure>
+      <img src="media-2.webp?v=20260923-v8" alt="Three Roots Animal Nutrition manufacturing plant in Weslaco, Texas" loading="eager" decoding="async">
+      <figcaption data-i18n="aboutPlantCaption">Three Roots Animal Nutrition manufacturing plant · Weslaco, Texas</figcaption>
+    </figure>
+
+    <div class="about-story">
+      <p class="eyebrow dark" data-i18n="aboutEyebrow">About Three Roots Animal Nutrition</p>
+      <h2 id="about-three-roots-title" data-i18n="aboutTitle">Built in Weslaco. Focused on quality feed and dependable service.</h2>
+      <p data-i18n="aboutText1">Three Roots Animal Nutrition is based in Weslaco, Texas and supplies quality feed products for breeders, ranchers, feed stores, dealers, and wholesale customers.</p>
+      <p data-i18n="aboutText2">From rooster conditioners and maintenance feeds to grains and specialty products, our goal is to provide dependable nutrition, consistent supply, and direct customer service. We are focused on helping customers and dealers get the products they need with confidence.</p>
+
+      <div class="about-points">
+        <div class="about-point">
+          <strong data-i18n="aboutPoint1Title">Manufactured in Weslaco, Texas</strong>
+          <span data-i18n="aboutPoint1Text">A real plant operation supports production, pickup coordination, and delivery planning.</span>
+        </div>
+        <div class="about-point">
+          <strong data-i18n="aboutPoint2Title">Serving customers and dealers</strong>
+          <span data-i18n="aboutPoint2Text">Three Roots supports breeders, ranchers, feed stores, and wholesale buyers throughout its growing market.</span>
+        </div>
+        <div class="about-point">
+          <strong data-i18n="aboutPoint3Title">Direct, practical service</strong>
+          <span data-i18n="aboutPoint3Text">Find a dealer, request an order, or contact the Three Roots team directly for product availability.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section aria-labelledby="formula-title" class="world" id="formulas">
 <div class="shell">
 <div class="section-heading reveal">
@@ -1536,9 +1740,25 @@ body{background:linear-gradient(180deg,#fbf7ed 0%,#f4f7ed 52%,#fbf7ed 100%)!impo
 <section aria-labelledby="retailer-title" class="retailer-section" id="retailers">
 <div class="retailer-panel shell reveal">
 <div class="retailer-intro">
-<p class="eyebrow" data-i18n="retailerEyebrow">Become a Three Roots Dealer</p>
+<p class="eyebrow" data-i18n="retailerEyebrow">Dealer opportunity</p>
 <h2 data-i18n="retailerTitle" id="retailer-title">Become a Three Roots Dealer</h2>
 <p data-i18n="retailerIntro">Serve breeders, ranchers, and exhibition-bird enthusiasts with a distinctive line of clean, colorful feeds. Tell us about your store and the customers you serve.</p>
+
+<div class="dealer-benefits">
+  <div class="dealer-benefit">
+    <strong data-i18n="dealerBenefit1Title">Expand your feed selection</strong>
+    <span data-i18n="dealerBenefit1Text">Add distinctive Three Roots formulas for breeders, ranchers, and specialty-feed customers.</span>
+  </div>
+  <div class="dealer-benefit">
+    <strong data-i18n="dealerBenefit2Title">Serve local demand</strong>
+    <span data-i18n="dealerBenefit2Text">Give customers a nearby place to buy Three Roots products and return for repeat purchases.</span>
+  </div>
+  <div class="dealer-benefit">
+    <strong data-i18n="dealerBenefit3Title">Direct wholesale support</strong>
+    <span data-i18n="dealerBenefit3Text">Contact Three Roots for current pricing, order minimums, delivery options, and territory availability.</span>
+  </div>
+</div>
+
 <a class="button button-primary retailer-button" data-i18n="retailerCta" data-retailer-inquiry="" href="#quote">Apply to Become a Dealer</a>
 <small data-i18n="retailerNote">Retailer approval, wholesale pricing, order minimums, delivery, and territory availability are confirmed directly by Three Roots.</small>
 </div>
@@ -1669,13 +1889,22 @@ body{background:linear-gradient(180deg,#fbf7ed 0%,#f4f7ed 52%,#fbf7ed 100%)!impo
 <h2 data-i18n="quoteTitle" id="quote-title">Place your Three Roots feed order now.</h2>
 <p data-i18n="quoteIntro">Send your bag, pallet, pickup, wholesale, or delivery request directly to Three Roots. We will use the information below to confirm product availability, pricing, and next steps.</p>
 
-<div class="order-email-box" id="email-order-box">
-  <h3 data-i18n="emailOrderTitle">Email Your Order</h3>
-  <p data-i18n="emailOrderText">Prefer email? Send your feed order, quantity, pickup or delivery request directly to Three Roots Animal Nutrition.</p>
-  <a class="email-order-button" data-i18n="emailOrderButton" href="mailto:info@threeroots.net?subject=Three%20Roots%20Feed%20Order%20Request">Email an Order Now</a>
-  <a class="order-email-address" href="mailto:info@threeroots.net?subject=Three%20Roots%20Feed%20Order%20Request">info@threeroots.net</a>
-</div>
 
+<div class="order-email-box" id="email-order-box">
+  <h3 data-i18n="emailOrderTitle">Place Your Order by Email</h3>
+  <p data-i18n="emailOrderText">Send your order directly to Three Roots Animal Nutrition. Include the product, quantity, pickup or delivery preference, and your contact information.</p>
+  <a class="email-order-button" data-i18n="emailOrderButton" href="mailto:info@threeroots.net?subject=Three%20Roots%20Feed%20Order%20Request&body=Name:%0D%0APhone:%0D%0ACity:%0D%0AProduct:%0D%0AQuantity:%0D%0APickup%20or%20Delivery:%0D%0AMessage:">Email Your Order Now</a>
+  <a class="order-email-address" href="mailto:info@threeroots.net?subject=Three%20Roots%20Feed%20Order%20Request">info@threeroots.net</a>
+  <div class="order-email-template">
+    <strong data-i18n="emailOrderInclude">Please include:</strong>
+    <ul>
+      <li data-i18n="emailOrderItem1">Product name</li>
+      <li data-i18n="emailOrderItem2">Quantity: bags, pallets, half-load, or truckload</li>
+      <li data-i18n="emailOrderItem3">Pickup or delivery request</li>
+      <li data-i18n="emailOrderItem4">Your city, phone number, and preferred contact method</li>
+    </ul>
+  </div>
+</div>
 <ul class="order-benefits">
 <li><b>01</b><span data-i18n="orderBenefit1">Order bags, pallets, half-loads, or ask about larger wholesale quantities.</span></li>
 <li><b>02</b><span data-i18n="orderBenefit2">Choose pickup, dealer pickup, or request delivery coordination.</span></li>
@@ -2225,8 +2454,8 @@ quoteForm.addEventListener("submit", async (event) => {
 });
 
 
-Object.assign(copy.en,{navVideos:'Customer Videos',videoEyebrow:'Customer stories & promotions',videoTitle:'See Three Roots in the real world.',videoIntro:'Featured customer, breeder, and dealer videos can be shared here from Facebook and TikTok. Every submission is reviewed before it appears on the website.',videoPlaceholder1:'Facebook customer testimonial video',videoPlaceholder2:'TikTok breeder / product video',videoPlaceholder3:'Dealer promotion or product feature',videoCard1Title:'Customer testimonial',videoCard1Text:'Approved Facebook videos can be embedded here without uploading a large video file to the website.',videoCard2Title:'Breeder spotlight',videoCard2Text:'Share breeder, customer, and exhibition-related promotional content from a public TikTok post.',videoCard3Title:'Dealer promotion',videoCard3Text:'Feature dealer promotions, new arrivals, events, or Three Roots product availability.',videoSubmitInfoTitle:'Want your video featured?',videoSubmitInfoText:'Send us the public Facebook or TikTok link. Three Roots reviews each submission before publishing it to the website.',videoModerationNote:'Only approved public videos will be displayed. Submitting a link does not guarantee publication.',videoFormTitle:'Submit a Customer Video',videoNameLabel:'Your name',videoBusinessLabel:'Business / Dealer / Breeder name',videoCityLabel:'City',videoPlatformLabel:'Platform',videoChoosePlatform:'Choose platform',videoUrlLabel:'Public video link',videoMessageLabel:'Short testimonial or promotion message',videoConsent:'I give Three Roots Animal Nutrition permission to review and display this public video link and the information I submitted on its website and social channels.',videoSubmitButton:'Submit Video Link',videoEmailButton:'Email the Video Link',videoGitHubNote:'The form is fully functional on Hostinger. On the GitHub test site, use the email button to send a submission.',navAbout:'About',navDealer:'Find a Dealer',navDealerApply:'Become a Dealer',navFaq:'FAQ',quoteEyebrow:'Online order request',quoteTitle:'Place your Three Roots feed order now.',quoteIntro:'Send your bag, pallet, pickup, wholesale, or delivery request directly to Three Roots. We will use the information below to confirm product availability, pricing, and next steps.',orderBenefit1:'Order bags, pallets, half-loads, or ask about larger wholesale quantities.',orderBenefit2:'Choose pickup, dealer pickup, or request delivery coordination.',orderBenefit3:'Your request goes directly to the Three Roots order email at info@threeroots.net.',formStep:'ONLINE ORDER',nameLabel:'Customer name',phoneLabel:'Phone number',emailLabel:'Email address',cityLabel:'City',stateLabel:'State',customerTypeLabel:'Customer type',customerIndividual:'Individual customer',customerBreeder:'Breeder',customerFeedStore:'Feed store',customerDealerWholesale:'Dealer / wholesale buyer',productLabel:'Product or feed requested',otherProduct:'Other / please advise',quantityLabel:'Quantity',unitLabel:'Order size',halfLoadWord:'Half load',truckloadWord:'Truckload',fulfillmentLabel:'Pickup or delivery',pickupPlant:'Pickup at Weslaco plant',pickupDealer:'Dealer pickup',deliveryRequest:'Delivery request',messageLabel:'Special instructions',messagePlaceholder:'Tell us the product, quantity, delivery location, or anything else we should know.',submitQuote:'Email my order request',emailOrderTitle:'Prefer to write the order yourself?',emailOrderCta:'Email an Order to info@threeroots.net',emailOrderNote:'The online form above does not require an email app. This button opens your own email program as an alternate option.',faqEyebrow:'Questions before you order',faqTitle:'Three Roots ordering & dealer FAQ',faqIntro:'Get quick answers about buying feed, wholesale orders, pickup, delivery, and becoming a Three Roots dealer.',faqQ1:'Where can I buy Three Roots feed?',faqA1:'Use the dealer locator to find a nearby store. Product availability can vary, so call the dealer before traveling.',faqQ2:'Can I place an order through this website?',faqA2:'Yes. Submit the online order request below. It is emailed directly to info@threeroots.net so the Three Roots team can confirm availability, pricing, pickup, or delivery.',faqQ3:'Do you handle pallet or half-load orders?',faqA3:'Yes. Use the order form and select the quantity and delivery option that fits your request. Freight, route availability, and final terms are confirmed by Three Roots.',faqQ4:'Can I pick up at the Weslaco plant?',faqA4:'Wholesale pickup may be available from the Weslaco plant. Submit an order request first so the team can confirm product and pickup timing.',faqQ5:'How do I become a Three Roots dealer?',faqA5:'Use the Become a Dealer section and order/contact form. Tell us your store name, service area, customer base, and expected volume so the team can discuss current dealer terms.',faqQ6:'Can I email an order instead?',faqA6:'Yes. Email your order request directly to ',formRequired:'Please complete your name, phone, city, state, and quantity.',formSuccess:'Thank you. Your order request was emailed to info@threeroots.net.',footerNote:'Three Roots Animal Nutrition · Weslaco, Texas · Product availability, pricing, delivery, and dealer terms are confirmed directly by Three Roots.'});
-Object.assign(copy.es,{navVideos:'Videos de Clientes',videoEyebrow:'Historias de clientes y promociones',videoTitle:'Vea a Three Roots en la vida real.',videoIntro:'Aquí se pueden compartir videos destacados de clientes, criadores y distribuidores desde Facebook y TikTok. Cada envío se revisa antes de aparecer en el sitio web.',videoPlaceholder1:'Video testimonial de cliente en Facebook',videoPlaceholder2:'Video de criador o producto en TikTok',videoPlaceholder3:'Promoción de distribuidor o producto',videoCard1Title:'Testimonio de cliente',videoCard1Text:'Los videos aprobados de Facebook se pueden mostrar aquí sin cargar archivos grandes al sitio web.',videoCard2Title:'Criador destacado',videoCard2Text:'Comparta contenido promocional público de TikTok de criadores, clientes y exhibiciones.',videoCard3Title:'Promoción de distribuidor',videoCard3Text:'Muestre promociones, nuevos productos, eventos o disponibilidad de productos Three Roots.',videoSubmitInfoTitle:'¿Quiere que publiquemos su video?',videoSubmitInfoText:'Envíenos el enlace público de Facebook o TikTok. Three Roots revisa cada envío antes de publicarlo en el sitio web.',videoModerationNote:'Solo se mostrarán videos públicos aprobados. Enviar un enlace no garantiza su publicación.',videoFormTitle:'Envíe un Video de Cliente',videoNameLabel:'Su nombre',videoBusinessLabel:'Negocio / Distribuidor / Criador',videoCityLabel:'Ciudad',videoPlatformLabel:'Plataforma',videoChoosePlatform:'Seleccione plataforma',videoUrlLabel:'Enlace público del video',videoMessageLabel:'Testimonio o mensaje promocional',videoConsent:'Autorizo a Three Roots Animal Nutrition a revisar y mostrar este enlace público y la información enviada en su sitio web y redes sociales.',videoSubmitButton:'Enviar Enlace del Video',videoEmailButton:'Enviar el Video por Correo',videoGitHubNote:'El formulario funciona completamente en Hostinger. En el sitio de prueba de GitHub, use el botón de correo electrónico.',emailOrderTitle:'Envíe Su Pedido por Correo',emailOrderText:'¿Prefiere correo electrónico? Envíe su pedido de alimento, cantidad y solicitud de recolección o entrega directamente a Three Roots Animal Nutrition.',emailOrderButton:'Enviar Pedido por Correo',navAbout:'Acerca de Nosotros',navDealer:'Encuentra un Distribuidor',navDealerApply:'Conviértase en Distribuidor',navFaq:'Preguntas',quoteEyebrow:'Solicitud de pedido en línea',quoteTitle:'Haga Su Pedido Aqui',quoteIntro:'Envía directamente a Three Roots tu solicitud de sacos, tarimas, recolección, mayoreo o entrega. Usaremos la información para confirmar disponibilidad, precio y los siguientes pasos.',orderBenefit1:'Solicita sacos, tarimas, media carga o cantidades mayores de mayoreo.',orderBenefit2:'Elige recolección, recolección con distribuidor o solicita coordinación de entrega.',orderBenefit3:'Tu solicitud llega directamente al correo de pedidos de Three Roots: info@threeroots.net.',formStep:'PEDIDO EN LÍNEA',nameLabel:'Nombre del cliente',phoneLabel:'Número de teléfono',emailLabel:'Correo electrónico',cityLabel:'Ciudad',stateLabel:'Estado',customerTypeLabel:'Tipo de cliente',customerIndividual:'Cliente individual',customerBreeder:'Criador',customerFeedStore:'Tienda de alimento',customerDealerWholesale:'Distribuidor / comprador de mayoreo',productLabel:'Producto o alimento solicitado',otherProduct:'Otro / solicito orientación',quantityLabel:'Cantidad',unitLabel:'Tamaño del pedido',halfLoadWord:'Media carga',truckloadWord:'Camión completo',fulfillmentLabel:'Recolección o entrega',pickupPlant:'Recolección en planta de Weslaco',pickupDealer:'Recolección con distribuidor',deliveryRequest:'Solicitar entrega',messageLabel:'Instrucciones especiales',messagePlaceholder:'Indique producto, cantidad, lugar de entrega o cualquier otro detalle.',submitQuote:'Enviar mi pedido por correo',emailOrderTitle:'¿Prefiere escribir el pedido usted mismo?',emailOrderCta:'Enviar pedido a info@threeroots.net',emailOrderNote:'El formulario de arriba no requiere una aplicación de correo. Este botón abre su propio correo como alternativa.',faqEyebrow:'Preguntas antes de ordenar',faqTitle:'Preguntas sobre pedidos y distribuidores',faqIntro:'Respuestas rápidas sobre compra de alimento, pedidos de mayoreo, recolección, entrega y cómo ser distribuidor de Three Roots.',faqQ1:'¿Dónde puedo comprar alimento Three Roots?',faqA1:'Use el localizador para encontrar un distribuidor cercano. La disponibilidad puede variar, por lo que conviene llamar antes de viajar.',faqQ2:'¿Puedo hacer un pedido desde este sitio web?',faqA2:'Sí. Envíe la solicitud de pedido en línea. Se manda directamente a info@threeroots.net para confirmar disponibilidad, precio, recolección o entrega.',faqQ3:'¿Manejan pedidos por tarima o media carga?',faqA3:'Sí. Use el formulario y seleccione la cantidad y opción de entrega. Three Roots confirma flete, disponibilidad de ruta y términos finales.',faqQ4:'¿Puedo recoger en la planta de Weslaco?',faqA4:'Puede haber recolección de mayoreo en la planta de Weslaco. Envíe primero la solicitud para confirmar producto y horario.',faqQ5:'¿Cómo puedo convertirme en distribuidor de Three Roots?',faqA5:'Use la sección Ser Distribuidor y el formulario de pedido/contacto. Indique nombre de la tienda, zona de servicio, clientes y volumen esperado para revisar términos actuales.',faqQ6:'¿Puedo enviar el pedido directamente por correo?',faqA6:'Sí. Envíe su solicitud directamente a ',formRequired:'Complete su nombre, teléfono, ciudad, estado y cantidad.',formSuccess:'Gracias. Su solicitud de pedido fue enviada a info@threeroots.net.',footerNote:'Three Roots Animal Nutrition · Weslaco, Texas · Three Roots confirma directamente disponibilidad, precios, entrega y términos para distribuidores.'});
+Object.assign(copy.en,{dealerBenefit1Title:'Expand your feed selection',dealerBenefit1Text:'Add distinctive Three Roots formulas for breeders, ranchers, and specialty-feed customers.',dealerBenefit2Title:'Serve local demand',dealerBenefit2Text:'Give customers a nearby place to buy Three Roots products and return for repeat purchases.',dealerBenefit3Title:'Direct wholesale support',dealerBenefit3Text:'Contact Three Roots for current pricing, order minimums, delivery options, and territory availability.',emailOrderTitle:'Place Your Order by Email',emailOrderText:'Send your order directly to Three Roots Animal Nutrition. Include the product, quantity, pickup or delivery preference, and your contact information.',emailOrderButton:'Email Your Order Now',emailOrderInclude:'Please include:',emailOrderItem1:'Product name',emailOrderItem2:'Quantity: bags, pallets, half-load, or truckload',emailOrderItem3:'Pickup or delivery request',emailOrderItem4:'Your city, phone number, and preferred contact method',aboutPlantCaption:'Three Roots Animal Nutrition manufacturing plant · Weslaco, Texas',aboutEyebrow:'About Three Roots Animal Nutrition',aboutTitle:'Built in Weslaco. Focused on quality feed and dependable service.',aboutText1:'Three Roots Animal Nutrition is based in Weslaco, Texas and supplies quality feed products for breeders, ranchers, feed stores, dealers, and wholesale customers.',aboutText2:'From rooster conditioners and maintenance feeds to grains and specialty products, our goal is to provide dependable nutrition, consistent supply, and direct customer service. We are focused on helping customers and dealers get the products they need with confidence.',aboutPoint1Title:'Manufactured in Weslaco, Texas',aboutPoint1Text:'A real plant operation supports production, pickup coordination, and delivery planning.',aboutPoint2Title:'Serving customers and dealers',aboutPoint2Text:'Three Roots supports breeders, ranchers, feed stores, and wholesale buyers throughout its growing market.',aboutPoint3Title:'Direct, practical service',aboutPoint3Text:'Find a dealer, request an order, or contact the Three Roots team directly for product availability.',navVideos:'Customer Videos',videoEyebrow:'Customer stories & promotions',videoTitle:'See Three Roots in the real world.',videoIntro:'Featured customer, breeder, and dealer videos can be shared here from Facebook and TikTok. Every submission is reviewed before it appears on the website.',videoPlaceholder1:'Facebook customer testimonial video',videoPlaceholder2:'TikTok breeder / product video',videoPlaceholder3:'Dealer promotion or product feature',videoCard1Title:'Customer testimonial',videoCard1Text:'Approved Facebook videos can be embedded here without uploading a large video file to the website.',videoCard2Title:'Breeder spotlight',videoCard2Text:'Share breeder, customer, and exhibition-related promotional content from a public TikTok post.',videoCard3Title:'Dealer promotion',videoCard3Text:'Feature dealer promotions, new arrivals, events, or Three Roots product availability.',videoSubmitInfoTitle:'Want your video featured?',videoSubmitInfoText:'Send us the public Facebook or TikTok link. Three Roots reviews each submission before publishing it to the website.',videoModerationNote:'Only approved public videos will be displayed. Submitting a link does not guarantee publication.',videoFormTitle:'Submit a Customer Video',videoNameLabel:'Your name',videoBusinessLabel:'Business / Dealer / Breeder name',videoCityLabel:'City',videoPlatformLabel:'Platform',videoChoosePlatform:'Choose platform',videoUrlLabel:'Public video link',videoMessageLabel:'Short testimonial or promotion message',videoConsent:'I give Three Roots Animal Nutrition permission to review and display this public video link and the information I submitted on its website and social channels.',videoSubmitButton:'Submit Video Link',videoEmailButton:'Email the Video Link',videoGitHubNote:'The form is fully functional on Hostinger. On the GitHub test site, use the email button to send a submission.',navAbout:'About',navDealer:'Find a Dealer',navDealerApply:'Become a Dealer',navFaq:'FAQ',quoteEyebrow:'Online order request',quoteTitle:'Place your Three Roots feed order now.',quoteIntro:'Send your bag, pallet, pickup, wholesale, or delivery request directly to Three Roots. We will use the information below to confirm product availability, pricing, and next steps.',orderBenefit1:'Order bags, pallets, half-loads, or ask about larger wholesale quantities.',orderBenefit2:'Choose pickup, dealer pickup, or request delivery coordination.',orderBenefit3:'Your request goes directly to the Three Roots order email at info@threeroots.net.',formStep:'ONLINE ORDER',nameLabel:'Customer name',phoneLabel:'Phone number',emailLabel:'Email address',cityLabel:'City',stateLabel:'State',customerTypeLabel:'Customer type',customerIndividual:'Individual customer',customerBreeder:'Breeder',customerFeedStore:'Feed store',customerDealerWholesale:'Dealer / wholesale buyer',productLabel:'Product or feed requested',otherProduct:'Other / please advise',quantityLabel:'Quantity',unitLabel:'Order size',halfLoadWord:'Half load',truckloadWord:'Truckload',fulfillmentLabel:'Pickup or delivery',pickupPlant:'Pickup at Weslaco plant',pickupDealer:'Dealer pickup',deliveryRequest:'Delivery request',messageLabel:'Special instructions',messagePlaceholder:'Tell us the product, quantity, delivery location, or anything else we should know.',submitQuote:'Email my order request',emailOrderTitle:'Prefer to write the order yourself?',emailOrderCta:'Email an Order to info@threeroots.net',emailOrderNote:'The online form above does not require an email app. This button opens your own email program as an alternate option.',faqEyebrow:'Questions before you order',faqTitle:'Three Roots ordering & dealer FAQ',faqIntro:'Get quick answers about buying feed, wholesale orders, pickup, delivery, and becoming a Three Roots dealer.',faqQ1:'Where can I buy Three Roots feed?',faqA1:'Use the dealer locator to find a nearby store. Product availability can vary, so call the dealer before traveling.',faqQ2:'Can I place an order through this website?',faqA2:'Yes. Submit the online order request below. It is emailed directly to info@threeroots.net so the Three Roots team can confirm availability, pricing, pickup, or delivery.',faqQ3:'Do you handle pallet or half-load orders?',faqA3:'Yes. Use the order form and select the quantity and delivery option that fits your request. Freight, route availability, and final terms are confirmed by Three Roots.',faqQ4:'Can I pick up at the Weslaco plant?',faqA4:'Wholesale pickup may be available from the Weslaco plant. Submit an order request first so the team can confirm product and pickup timing.',faqQ5:'How do I become a Three Roots dealer?',faqA5:'Use the Become a Dealer section and order/contact form. Tell us your store name, service area, customer base, and expected volume so the team can discuss current dealer terms.',faqQ6:'Can I email an order instead?',faqA6:'Yes. Email your order request directly to ',formRequired:'Please complete your name, phone, city, state, and quantity.',formSuccess:'Thank you. Your order request was emailed to info@threeroots.net.',footerNote:'Three Roots Animal Nutrition · Weslaco, Texas · Product availability, pricing, delivery, and dealer terms are confirmed directly by Three Roots.'});
+Object.assign(copy.es,{dealerBenefit1Title:'Amplíe su selección de alimentos',dealerBenefit1Text:'Agregue fórmulas distintivas de Three Roots para criadores, rancheros y clientes de alimentos especializados.',dealerBenefit2Title:'Atienda la demanda local',dealerBenefit2Text:'Ofrezca a sus clientes un lugar cercano para comprar productos Three Roots y regresar por compras repetidas.',dealerBenefit3Title:'Apoyo mayorista directo',dealerBenefit3Text:'Contacte a Three Roots para precios actuales, mínimos de pedido, opciones de entrega y disponibilidad de territorio.',emailOrderTitle:'Haga Su Pedido por Correo',emailOrderText:'Envíe su pedido directamente a Three Roots Animal Nutrition. Incluya producto, cantidad, opción de recolección o entrega y su información de contacto.',emailOrderButton:'Enviar Su Pedido Ahora',emailOrderInclude:'Incluya por favor:',emailOrderItem1:'Nombre del producto',emailOrderItem2:'Cantidad: sacos, tarimas, media carga o carga completa',emailOrderItem3:'Solicitud de recolección o entrega',emailOrderItem4:'Su ciudad, teléfono y método de contacto preferido',aboutPlantCaption:'Planta de fabricación de Three Roots Animal Nutrition · Weslaco, Texas',aboutEyebrow:'Acerca de Three Roots Animal Nutrition',aboutTitle:'Hecho en Weslaco. Enfocado en alimento de calidad y servicio confiable.',aboutText1:'Three Roots Animal Nutrition tiene su base en Weslaco, Texas y ofrece productos de alimento de calidad para criadores, rancheros, tiendas de alimento, distribuidores y clientes mayoristas.',aboutText2:'Desde acondicionadores para gallos y alimentos de mantenimiento hasta granos y productos especiales, nuestra meta es brindar nutrición confiable, suministro constante y atención directa al cliente. Estamos enfocados en ayudar a clientes y distribuidores a obtener los productos que necesitan con confianza.',aboutPoint1Title:'Fabricado en Weslaco, Texas',aboutPoint1Text:'Una operación real de planta respalda la producción, la coordinación de recolección y la planeación de entregas.',aboutPoint2Title:'Atendiendo a clientes y distribuidores',aboutPoint2Text:'Three Roots apoya a criadores, rancheros, tiendas de alimento y compradores mayoristas en su mercado en crecimiento.',aboutPoint3Title:'Servicio directo y práctico',aboutPoint3Text:'Encuentre un distribuidor, solicite un pedido o contacte directamente al equipo de Three Roots para disponibilidad de productos.',navVideos:'Videos de Clientes',videoEyebrow:'Historias de clientes y promociones',videoTitle:'Vea a Three Roots en la vida real.',videoIntro:'Aquí se pueden compartir videos destacados de clientes, criadores y distribuidores desde Facebook y TikTok. Cada envío se revisa antes de aparecer en el sitio web.',videoPlaceholder1:'Video testimonial de cliente en Facebook',videoPlaceholder2:'Video de criador o producto en TikTok',videoPlaceholder3:'Promoción de distribuidor o producto',videoCard1Title:'Testimonio de cliente',videoCard1Text:'Los videos aprobados de Facebook se pueden mostrar aquí sin cargar archivos grandes al sitio web.',videoCard2Title:'Criador destacado',videoCard2Text:'Comparta contenido promocional público de TikTok de criadores, clientes y exhibiciones.',videoCard3Title:'Promoción de distribuidor',videoCard3Text:'Muestre promociones, nuevos productos, eventos o disponibilidad de productos Three Roots.',videoSubmitInfoTitle:'¿Quiere que publiquemos su video?',videoSubmitInfoText:'Envíenos el enlace público de Facebook o TikTok. Three Roots revisa cada envío antes de publicarlo en el sitio web.',videoModerationNote:'Solo se mostrarán videos públicos aprobados. Enviar un enlace no garantiza su publicación.',videoFormTitle:'Envíe un Video de Cliente',videoNameLabel:'Su nombre',videoBusinessLabel:'Negocio / Distribuidor / Criador',videoCityLabel:'Ciudad',videoPlatformLabel:'Plataforma',videoChoosePlatform:'Seleccione plataforma',videoUrlLabel:'Enlace público del video',videoMessageLabel:'Testimonio o mensaje promocional',videoConsent:'Autorizo a Three Roots Animal Nutrition a revisar y mostrar este enlace público y la información enviada en su sitio web y redes sociales.',videoSubmitButton:'Enviar Enlace del Video',videoEmailButton:'Enviar el Video por Correo',videoGitHubNote:'El formulario funciona completamente en Hostinger. En el sitio de prueba de GitHub, use el botón de correo electrónico.',emailOrderTitle:'Envíe Su Pedido por Correo',emailOrderText:'¿Prefiere correo electrónico? Envíe su pedido de alimento, cantidad y solicitud de recolección o entrega directamente a Three Roots Animal Nutrition.',emailOrderButton:'Enviar Pedido por Correo',navAbout:'Acerca de Nosotros',navDealer:'Encuentra un Distribuidor',navDealerApply:'Conviértase en Distribuidor',navFaq:'Preguntas',quoteEyebrow:'Solicitud de pedido en línea',quoteTitle:'Haga Su Pedido Aqui',quoteIntro:'Envía directamente a Three Roots tu solicitud de sacos, tarimas, recolección, mayoreo o entrega. Usaremos la información para confirmar disponibilidad, precio y los siguientes pasos.',orderBenefit1:'Solicita sacos, tarimas, media carga o cantidades mayores de mayoreo.',orderBenefit2:'Elige recolección, recolección con distribuidor o solicita coordinación de entrega.',orderBenefit3:'Tu solicitud llega directamente al correo de pedidos de Three Roots: info@threeroots.net.',formStep:'PEDIDO EN LÍNEA',nameLabel:'Nombre del cliente',phoneLabel:'Número de teléfono',emailLabel:'Correo electrónico',cityLabel:'Ciudad',stateLabel:'Estado',customerTypeLabel:'Tipo de cliente',customerIndividual:'Cliente individual',customerBreeder:'Criador',customerFeedStore:'Tienda de alimento',customerDealerWholesale:'Distribuidor / comprador de mayoreo',productLabel:'Producto o alimento solicitado',otherProduct:'Otro / solicito orientación',quantityLabel:'Cantidad',unitLabel:'Tamaño del pedido',halfLoadWord:'Media carga',truckloadWord:'Camión completo',fulfillmentLabel:'Recolección o entrega',pickupPlant:'Recolección en planta de Weslaco',pickupDealer:'Recolección con distribuidor',deliveryRequest:'Solicitar entrega',messageLabel:'Instrucciones especiales',messagePlaceholder:'Indique producto, cantidad, lugar de entrega o cualquier otro detalle.',submitQuote:'Enviar mi pedido por correo',emailOrderTitle:'¿Prefiere escribir el pedido usted mismo?',emailOrderCta:'Enviar pedido a info@threeroots.net',emailOrderNote:'El formulario de arriba no requiere una aplicación de correo. Este botón abre su propio correo como alternativa.',faqEyebrow:'Preguntas antes de ordenar',faqTitle:'Preguntas sobre pedidos y distribuidores',faqIntro:'Respuestas rápidas sobre compra de alimento, pedidos de mayoreo, recolección, entrega y cómo ser distribuidor de Three Roots.',faqQ1:'¿Dónde puedo comprar alimento Three Roots?',faqA1:'Use el localizador para encontrar un distribuidor cercano. La disponibilidad puede variar, por lo que conviene llamar antes de viajar.',faqQ2:'¿Puedo hacer un pedido desde este sitio web?',faqA2:'Sí. Envíe la solicitud de pedido en línea. Se manda directamente a info@threeroots.net para confirmar disponibilidad, precio, recolección o entrega.',faqQ3:'¿Manejan pedidos por tarima o media carga?',faqA3:'Sí. Use el formulario y seleccione la cantidad y opción de entrega. Three Roots confirma flete, disponibilidad de ruta y términos finales.',faqQ4:'¿Puedo recoger en la planta de Weslaco?',faqA4:'Puede haber recolección de mayoreo en la planta de Weslaco. Envíe primero la solicitud para confirmar producto y horario.',faqQ5:'¿Cómo puedo convertirme en distribuidor de Three Roots?',faqA5:'Use la sección Ser Distribuidor y el formulario de pedido/contacto. Indique nombre de la tienda, zona de servicio, clientes y volumen esperado para revisar términos actuales.',faqQ6:'¿Puedo enviar el pedido directamente por correo?',faqA6:'Sí. Envíe su solicitud directamente a ',formRequired:'Complete su nombre, teléfono, ciudad, estado y cantidad.',formSuccess:'Gracias. Su solicitud de pedido fue enviada a info@threeroots.net.',footerNote:'Three Roots Animal Nutrition · Weslaco, Texas · Three Roots confirma directamente disponibilidad, precios, entrega y términos para distribuidores.'});
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
